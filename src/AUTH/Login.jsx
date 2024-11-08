@@ -1,21 +1,26 @@
 import { Alert, Button, Form, Input } from "antd";
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
+import { updateAuth } from "../../REDUX-AUTH/Authslice";
 
 const Login = ({ auth }) => {
   const [apistatus, setApistatus] = useState("init");
+  const dispatch = useDispatch();
   const navigate = useNavigate();
 
   const submitlogin = async (logininfo) => {
     setApistatus("pending");
     const { success } = await auth.login(logininfo);
     if (success) {
-      setApistatus("loginSuccess");
+      dispatch(updateAuth(true));
       navigate("/dashboard");
     } else {
       setApistatus("error");
     }
   };
+
+  
   return (
     <div className="form">
       <Form layout="vertical" onFinish={submitlogin}>

@@ -18,7 +18,7 @@
     box-shadow: 2px 2px 13px #ff370a;
     border-radius: 10px;
     padding: 20px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(128, 155, 118);
     color: black;
     // position: absolute;
     h1 {
@@ -80,4 +80,26 @@
 }
 .link {
   color: rgb(255, 145, 2);
+}
+
+.header{
+  background-color: #eae1e1;
+  height: 60px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  padding-inline: 20px;
+  button{
+    padding: 10px 26px;
+    background-color: #ffa963;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+.btns:hover{
+  background-color: #ffba82;
 }

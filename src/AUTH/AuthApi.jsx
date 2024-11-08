@@ -22,6 +22,8 @@ const AuthApi = () => {
         method: "POST",
         data: credentials,
       });
+      const token = response.data.token;
+      localStorage.setItem("token", token);
       return { success: true };
     } catch (error) {
       alert("login failed");

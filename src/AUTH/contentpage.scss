@@ -1,0 +1,47 @@
+.dashmain {
+  height: 100vh;
+  width: 100vw;
+}
+.dropdown {
+  display: flex;
+  justify-content: end;
+  padding: 3px 30px;
+  position: sticky;
+  top: 0px;
+  background-color: rgb(220, 227, 233);
+}
+.dropdown > button {
+  background-color: rgb(215, 145, 40);
+  padding: 10px 22px;
+  border: none;
+  border-radius: 10px;
+}
+
+.sidebarpage {
+  background-color: antiquewhite;
+  width: 30vw;
+  height: 100vh;
+}
+.contentpage {
+  background-color: rgb(205, 206, 206);
+  width: 70vw;
+  height: 100vh;
+}
+// .logout {
+//   display: flex;
+//   justify-content: end;
+//   background-color: rgb(150, 156, 161);
+//   padding: 5px 30px;
+//   button{
+//     padding: 7px 36px;
+//     background-color: rgb(254, 135, 135);
+//     border-radius: 7px;
+//     border: none;
+//     font-size: 16px;
+//   }
+// }
+.comp {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
